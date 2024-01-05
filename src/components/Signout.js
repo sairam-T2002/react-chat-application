@@ -3,6 +3,10 @@ import { auth } from "../firebase";
 
 export default function SignOut() {
   return (
-    auth.currentUser && <button onClick={() => signOut(auth)}>Sign out</button>
+    auth.currentUser && (
+      <button className="sign" onClick={() => signOut(auth)}>
+        Sign out
+      </button>
+    )
   );
 }

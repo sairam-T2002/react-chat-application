@@ -12,5 +12,9 @@ export default function SignIn() {
     }
   };
 
-  return <button onClick={signInWithGoogle}>Sign in with Google</button>;
+  return (
+    <button className="sign" onClick={signInWithGoogle}>
+      Sign in
+    </button>
+  );
 }
